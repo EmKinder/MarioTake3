@@ -268,7 +268,6 @@ GameObject:
   - component: {fileID: 204264299}
   - component: {fileID: 204264303}
   - component: {fileID: 204264306}
-  - component: {fileID: 204264305}
   - component: {fileID: 204264304}
   m_Layer: 0
   m_Name: PlayerTest
@@ -362,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204264298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.843, y: -0.38, z: 0}
+  m_LocalPosition: {x: -5.25, y: -0.41, z: 0}
   m_LocalScale: {x: 1.721491, y: 3.6555, z: 3.6555}
   m_Children: []
   m_Father: {fileID: 0}
@@ -418,22 +417,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 5762151112242134396, guid: 039de6f9f9656ef49a94e6fd499895ca, type: 3}
-  velocity: {x: 0, y: 0}
-  offset: {x: 0.4, y: 0.1}
+  velocity: {x: 5, y: -5}
+  offset: {x: 0.7, y: 0.1}
   cooldown: 1
---- !u!114 &204264305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204264298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f001de60a75a74c41942822e9e25ed18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives: {fileID: 973694591}
 --- !u!114 &204264306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +432,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065e4f2becc496b4f8e0842fa4533511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentMarioState: 
+  shootFireball: {fileID: 204264303}
+  lives: {fileID: 973694591}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +549,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 0
+  loadScene: {fileID: 973694593}
+  playerDeath: 0
 --- !u!4 &973694592
 Transform:
   m_ObjectHideFlags: 0
@@ -583,6 +574,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 973694590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 048f08ca632d3504e8d23073b49f2088, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a498309457ce4849a19ecbf2e1348ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
+  timerActive: 0
+  sceneIndex: 0

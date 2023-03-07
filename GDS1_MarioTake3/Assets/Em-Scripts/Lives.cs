@@ -6,14 +6,42 @@ using UnityEngine;
 
 public class Lives : MonoBehaviour
 {
-
+    static Lives instance;
     public int lives;
-    LoadScene loadScene;
+    public LoadScene loadScene;
+    public bool playerDeath; //TEST
+    
 
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     void Start()
     {
         lives = 3;
+        playerDeath = false; //TEST
+    }
+
+    private void Update()
+    {
+        if (playerDeath)
+        {
+            PlayerDeath();
+            playerDeath = false;
+            //TEST
+        }
+
+        if(loadScene.GetSceneIndex() == 1)
+        {
+            lives = 3;
+        }
     }
 
     // Update is called once per frame
