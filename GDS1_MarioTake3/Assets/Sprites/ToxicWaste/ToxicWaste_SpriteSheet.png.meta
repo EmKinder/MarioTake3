@@ -1,7 +1,88 @@
 fileFormatVersion: 2
 guid: 155f2107dc3014c41aef09fb17a196d0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1382052617098605251
+    second: ToxicWaste_SpriteSheet_0
+  - first:
+      213: -199494291420034062
+    second: ToxicWaste_SpriteSheet_1
+  - first:
+      213: -6390043221191574040
+    second: ToxicWaste_SpriteSheet_2
+  - first:
+      213: -3408945434580981006
+    second: TW3
+  - first:
+      213: 5908098346359327616
+    second: ToxicWaste_SpriteSheet_4
+  - first:
+      213: 7768619220415186509
+    second: ToxicWaste_SpriteSheet_5
+  - first:
+      213: 8767683460168702002
+    second: TW1
+  - first:
+      213: 5444968734536004324
+    second: ToxicWaste_SpriteSheet_7
+  - first:
+      213: 6063408268166340370
+    second: TW2
+  - first:
+      213: -8371601799104316087
+    second: ToxicWaste_SpriteSheet_9
+  - first:
+      213: -8189041349875599491
+    second: ToxicWaste_SpriteSheet_10
+  - first:
+      213: 1684973868848608984
+    second: TW4
+  - first:
+      213: 1614857776151745552
+    second: ToxicWaste_SpriteSheet_12
+  - first:
+      213: -661561295952223275
+    second: ToxicWaste_SpriteSheet_13
+  - first:
+      213: 8253194333022732083
+    second: ToxicWaste_SpriteSheet_14
+  - first:
+      213: 7955726828684781632
+    second: ToxicWaste_SpriteSheet_15
+  - first:
+      213: 7207373991839900247
+    second: ToxicWaste_SpriteSheet_16
+  - first:
+      213: 3282687940678565142
+    second: ToxicWaste_SpriteSheet_17
+  - first:
+      213: 2192786635748940303
+    second: ToxicWaste_SpriteSheet_18
+  - first:
+      213: -6913577557623345130
+    second: ToxicWaste_SpriteSheet_19
+  - first:
+      213: 5973508675650802165
+    second: ToxicWaste_SpriteSheet_20
+  - first:
+      213: 7928741854978216615
+    second: ToxicWaste_SpriteSheet_21
+  - first:
+      213: 4528197936632037552
+    second: ToxicWaste_SpriteSheet_22
+  - first:
+      213: 2114600430220594550
+    second: ToxicWaste_SpriteSheet_23
+  - first:
+      213: -4476815070345027504
+    second: ToxicWaste_SpriteSheet_24
+  - first:
+      213: 3217129488658378956
+    second: ToxicWaste_SpriteSheet_25
+  - first:
+      213: 3052640399091329095
+    second: ToxicWaste_SpriteSheet_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +122,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +156,186 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TW3
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 20
+        width: 110
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa6c19403ef0b0d0800000000000000
+      internalID: -3408945434580981006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TW1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 20
+        width: 109
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2385c6267a11da970800000000000000
+      internalID: 8767683460168702002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TW2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 20
+        width: 109
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f9830d1bd852450800000000000000
+      internalID: 6063408268166340370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TW4
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 20
+        width: 109
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6798c6eca326710800000000000000
+      internalID: 1684973868848608984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicWaste_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 34
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dcf2d33e1985d10800000000000000
+      internalID: 2114600430220594550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
