@@ -4,10 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Goomba
-  - pip-reg2
-  - pip1
-  - floor
+  - Pipe-Regular
+  - Floor
+  - Blocks
+  - MysteryBlocks
+  - Pipe-Underground
   layers:
   - Default
   - TransparentFX
