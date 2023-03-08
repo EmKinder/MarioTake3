@@ -7,11 +7,12 @@ public class FireballPickup : MonoBehaviour
     // Start is called before the first frame update
     MarioAbilityState abilityState;
     Score score;
-    ShootFireball shootFireball;
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        shootFireball = GetComponent<ShootFireball>();
+
     }
 
     // Update is called once per frame
@@ -27,7 +28,6 @@ public class FireballPickup : MonoBehaviour
             if (abilityState.GetMarioState() == "Regular" || abilityState.GetMarioState() == "Mushroom")
             {
                 abilityState.SetMarioState("Fireball");
-                shootFireball.enabled = true;
                
             }
             score.SetScore(1000);

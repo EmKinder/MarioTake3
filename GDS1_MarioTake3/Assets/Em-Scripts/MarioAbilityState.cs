@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class MarioAbilityState : MonoBehaviour
 {
-    string CurrentMarioState;
+    public string CurrentMarioState;
+    public ShootFireball shootFireball;
+    public Lives lives;
 
     // Start is called before the first frame update
     void Start()
     {
         CurrentMarioState = "Regular";
+
     }
 
     // Update is called once per frame
@@ -29,4 +32,21 @@ public class MarioAbilityState : MonoBehaviour
         return CurrentMarioState;
     }
 
+    public void DowngradeAbility()
+    {
+        if (GetMarioState() == "Mushroom")
+        {
+            SetMarioState("Regular");
+        }
+
+        if (GetMarioState() == "Fireball")
+        {
+            SetMarioState("Mushroom");
+        }
+        if (GetMarioState() == "Regular")
+        {
+            lives.PlayerDeath();
+        }
+    }
 }
+    
