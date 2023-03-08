@@ -5,7 +5,7 @@ using UnityEngine;
 public class playermovement : MonoBehaviour
 {
     public float moveSpeed = 10;
-    public Rigidbody2D rigidbody2D;
+    public Rigidbody2D rigidbody2D; 
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +17,12 @@ public class playermovement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(Vector2.right *moveSpeed *Time.deltaTime);
+            Debug.Log("Fuckkkk");
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
         }
         if(Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector2.left *moveSpeed *Time.deltaTime);
+            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
         if(Input.GetKey(KeyCode.UpArrow)){
             float jumpVelocity = 10f;
