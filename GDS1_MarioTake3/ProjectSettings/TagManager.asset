@@ -8,7 +8,7 @@ TagManager:
   - Floor
   - Blocks
   - MysteryBlocks
-  - Pipe-Underground
+  - PipeEntrance
   layers:
   - Default
   - TransparentFX

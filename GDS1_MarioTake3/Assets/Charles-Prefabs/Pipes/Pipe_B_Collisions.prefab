@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4439799044161843517}
   - component: {fileID: 4439799044161843490}
   m_Layer: 0
-  m_Name: Pipe_B
+  m_Name: Pipe_B_Collisions
   m_TagString: Pipe-Regular
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
