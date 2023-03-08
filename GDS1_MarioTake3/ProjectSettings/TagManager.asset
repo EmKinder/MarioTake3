@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Goomba
+  - pip-reg2
+  - pip1
+  - floor
   layers:
   - Default
   - TransparentFX
