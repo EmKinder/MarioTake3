@@ -7,12 +7,14 @@ public class Fireball : MonoBehaviour
 
     public Rigidbody2D rb;
     public Vector2 velocity;
+    Score score;
     // Start is called before the first frame update
     void Start()
     {
         Destroy(this.gameObject, 10);
         rb = GetComponent<Rigidbody2D>();
         velocity = rb.velocity;
+        score = FindObjectOfType<Score>();
     }
 
     // Update is called once per frame
@@ -31,7 +33,9 @@ public class Fireball : MonoBehaviour
         if(collision.collider.tag == "Enemy")
         {
             Destroy(collision.gameObject);
+            score.SetScore(100);
             Explode();
+            
         }
         if(collision.contacts[0].normal.x != 0 && collision.collider.tag != "Player" && collision.collider.tag != "Fireball")
         {

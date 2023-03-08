@@ -14,13 +14,18 @@ public class MarioAbilityState : MonoBehaviour
     {
         CurrentMarioState = "Regular";
         anim = gameObject.GetComponent<Animator>();
+        lives = FindObjectOfType<Lives>();
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(transform.position.y <= -40.0f)
+        {
+            lives.PlayerDeath();
+        }
     }
 
     public void SetMarioState(string state)
@@ -72,6 +77,7 @@ public class MarioAbilityState : MonoBehaviour
             if (CurrentMarioState == "Star")
             {
                 Debug.Log("Enemy Killed");
+               // anim.Play()
                 Destroy(collision.gameObject);
             }
             else
@@ -81,5 +87,6 @@ public class MarioAbilityState : MonoBehaviour
             }
         }
     }
+
 }
     

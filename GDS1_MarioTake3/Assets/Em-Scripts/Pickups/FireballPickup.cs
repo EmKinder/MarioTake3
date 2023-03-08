@@ -24,7 +24,7 @@ public class FireballPickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {        
-        if (other.tag == "Player")
+        if (other.tag == "Rat")
         {
 
             if (abilityState.GetMarioState() == "Regular" || abilityState.GetMarioState() == "Mushroom")

@@ -143,3 +143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockAnimation: {fileID: 3545564622510914834}
+  fuckingGame: {fileID: 0}
+  fireball: {fileID: 0}
+  mushroom: {fileID: 0}

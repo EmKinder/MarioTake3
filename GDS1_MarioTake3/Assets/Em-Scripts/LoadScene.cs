@@ -12,6 +12,7 @@ public class LoadScene : MonoBehaviour
     public int sceneIndex;
     public bool gameReset;
     public Lives lives;
+    public Score score;
 
 
     // Start is called before the first frame update
@@ -21,6 +22,7 @@ public class LoadScene : MonoBehaviour
     {
         timerActive = false;
         timer = 0;
+        score = FindObjectOfType<Score>();
     }
 
     // Update is called once per frame
@@ -56,6 +58,7 @@ public class LoadScene : MonoBehaviour
         if(gameReset == true)
         {
             lives.ResetLives();
+            
         }
         SceneManager.LoadScene(0);
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -91,6 +94,7 @@ public class LoadScene : MonoBehaviour
     public void GameRestart()
     {
         lives.ResetLives();
+        score.ResetScore();
         LoadLivesScene();
     }
 }
