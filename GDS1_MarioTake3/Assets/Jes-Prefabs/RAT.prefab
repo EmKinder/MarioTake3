@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2119777688}
   m_Layer: 0
   m_Name: RAT
-  m_TagString: Untagged
+  m_TagString: Rat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762a1b133221c40419521b00a2a66757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 5
   rigidbody2D: {fileID: 2119777687}
 --- !u!60 &2119777688
 PolygonCollider2D:
