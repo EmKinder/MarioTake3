@@ -35,14 +35,15 @@ public class turtleScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "pip1")
+        if (collision.gameObject.tag == "Pipe-Regular")
         {
             animationControl.SetTrigger("TurtleLeft");
             enemy.transform.Rotate(0f, 180f, 0);
+            
 
 
         }
-        if (collision.gameObject.tag == "pip-reg2")
+        if (collision.gameObject.tag == "Pipe-Regular")
         {
             animationControl.SetTrigger("TurtleRight");
             enemy.transform.Rotate(0f, 180f, 0);

@@ -40,13 +40,13 @@ public class GoombaEvilMovement : MonoBehaviour
     {
         if (rend.isVisible)
         {
-            if (collision.gameObject.tag == "pip1")
+            if (collision.gameObject.tag == "Pipe-Regular")
             {
                 animationControl.SetTrigger("GURight");
                 enemy.transform.Rotate(0f, 180f, 0);
 
             }
-            if (collision.gameObject.tag == "pip-reg2")
+            if (collision.gameObject.tag == "Pipe-Regular")
             {
                 animationControl.SetTrigger("GULeft");
                 enemy.transform.Rotate(0f, 180f, 0);

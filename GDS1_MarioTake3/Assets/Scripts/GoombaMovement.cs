@@ -40,7 +40,7 @@ public class GoombaMovement : MonoBehaviour
     {
         if (rend.isVisible)
         {
-            if (collision.gameObject.tag == "pip1")
+            if (collision.gameObject.tag == "Pipe-Regular")
             {
                 animationControl.SetTrigger("GoombaRight");
                 enemy.transform.Rotate(0f, 180f, 0);
@@ -49,7 +49,7 @@ public class GoombaMovement : MonoBehaviour
 
 
             }
-            if (collision.gameObject.tag == "pip-reg2")
+            if (collision.gameObject.tag == "Pipe-Regular")
             {
                 animationControl.SetTrigger("GoombaLeft");
                 enemy.transform.Rotate(0f, 180f, 0);
