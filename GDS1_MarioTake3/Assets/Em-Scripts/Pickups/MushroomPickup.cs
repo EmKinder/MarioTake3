@@ -16,9 +16,9 @@ public class MushroomPickup : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        transform.position += new Vector3(2.0f * Time.deltaTime, 0, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
