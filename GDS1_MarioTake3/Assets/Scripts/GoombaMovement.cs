@@ -7,6 +7,7 @@ public class GoombaMovement : MonoBehaviour
     public Rigidbody2D enemy;
     public Renderer rend;
     public float enemySpeed;
+    public Animator animationControl;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class GoombaMovement : MonoBehaviour
     {
         if (rend.isVisible)
         {
+            animationControl.SetTrigger("GUwalkLeft");
             enemy.velocity = -Vector2.right * enemySpeed;
         }
     }
