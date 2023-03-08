@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Pipe-Regular
+  - Floor
+  - Blocks
+  - MysteryBlocks
+  - Pipe-Underground
   layers:
   - Default
   - TransparentFX
