@@ -6,12 +6,10 @@ public class playermovement : MonoBehaviour
 {
     public float moveSpeed = 10;
     public Rigidbody2D rigidbody2D;
-
-
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -25,8 +23,8 @@ public class playermovement : MonoBehaviour
         {
             transform.Translate(Vector2.left *moveSpeed *Time.deltaTime);
         }
-        if(Input.GetKeyDown(KeyCode.UpArrow)){
-            float jumpVelocity = 7f;
+        if(Input.GetKey(KeyCode.UpArrow)){
+            float jumpVelocity = 10f;
             rigidbody2D.velocity = Vector2.up * jumpVelocity;
         }
     }

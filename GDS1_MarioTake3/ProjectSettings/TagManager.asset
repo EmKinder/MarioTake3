@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Fireball
-  - Enemy
+  - Goomba
+  - pip-reg2
+  - pip1
+  - floor
   layers:
   - Default
   - TransparentFX
