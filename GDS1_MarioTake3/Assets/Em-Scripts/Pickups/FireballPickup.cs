@@ -30,9 +30,10 @@ public class FireballPickup : MonoBehaviour
             if (abilityState.GetMarioState() == "Regular" || abilityState.GetMarioState() == "Mushroom")
             {
                 abilityState.SetMarioState("Fireball");
+                abilityState.Fireball();
 
             }
-          //  score.SetScore(1000);
+            score.SetScore(1000);
             Destroy(this.gameObject);
         }
     }

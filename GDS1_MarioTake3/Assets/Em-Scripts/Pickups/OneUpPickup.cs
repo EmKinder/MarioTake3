@@ -5,11 +5,12 @@ using UnityEngine;
 public class OneUpPickup : MonoBehaviour
 {
 
-    Lives lives; 
+    Lives lives;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        lives = FindObjectOfType<Lives>();
     }
 
     // Update is called once per frame
@@ -18,11 +19,13 @@ public class OneUpPickup : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
+            Debug.Log("One up");
             lives.AddLife();
+            Destroy(this.gameObject);
         }
     }
 }

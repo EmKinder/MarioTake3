@@ -7,10 +7,12 @@ public class MushroomPickup : MonoBehaviour
 
     MarioAbilityState abilityState;
     Score score;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        abilityState = FindObjectOfType<MarioAbilityState>();
+        score = FindObjectOfType<Score>();
     }
 
     // Update is called once per frame
@@ -19,16 +21,17 @@ public class MushroomPickup : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
             if(abilityState.GetMarioState() == "Regular") {
                 abilityState.SetMarioState("Mushroom");
-                //change mario
+                abilityState.Mushroom();
 
             }
-            score.SetScore(1000);  
+            score.SetScore(1000);
+            Destroy(this.gameObject);
         }
 
     }
