@@ -205,7 +205,7 @@ Transform:
   m_LocalScale: {x: 19.976273, y: -2.6105, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &39359046
 BoxCollider2D:
@@ -254,6 +254,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &71691332 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9120123655708974960, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+  m_PrefabInstance: {fileID: 519850687}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065e4f2becc496b4f8e0842fa4533511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &71691333 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -3476169038222664071, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+  m_PrefabInstance: {fileID: 519850687}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21219746fe848c41aaec5380de8ee65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &71691336 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2119777687, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+  m_PrefabInstance: {fileID: 519850687}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &204264298
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +391,7 @@ Transform:
   m_LocalScale: {x: 1.721491, y: 3.6555, z: 3.6555}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &204264302
 Rigidbody2D:
@@ -502,6 +529,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &519850687
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -9120123655708974960, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: lives
+      value: 
+      objectReference: {fileID: 973694591}
+    - target: {fileID: -9120123655708974960, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: shootFireball
+      value: 
+      objectReference: {fileID: 71691333}
+    - target: {fileID: -3476169038222664071, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: offset.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3476169038222664071, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 5762151112242134396, guid: 039de6f9f9656ef49a94e6fd499895ca, type: 3}
+    - target: {fileID: -3476169038222664071, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: abilityState
+      value: 
+      objectReference: {fileID: 71691332}
+    - target: {fileID: 2119777683, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119777683, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: rigidbody2D
+      value: 
+      objectReference: {fileID: 71691336}
+    - target: {fileID: 2119777687, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.0595279
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5584295
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973923, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122906511725973926, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
+      propertyPath: m_Name
+      value: RAT
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea511d94eac8fd644bdbabf68459f50c, type: 3}
 --- !u!1 &973694590
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +663,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &973694593
 MonoBehaviour:
@@ -564,3 +680,5 @@ MonoBehaviour:
   timer: 0
   timerActive: 0
   sceneIndex: 0
+  gameReset: 0
+  lives: {fileID: 0}
