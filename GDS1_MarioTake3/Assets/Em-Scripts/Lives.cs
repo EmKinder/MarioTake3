@@ -12,7 +12,8 @@ public class Lives : MonoBehaviour
     public LoadScene loadScene;
     public bool playerDeath; //TEST
     Text livesText;
-    Text scoreText; 
+    Text scoreText;
+    Score score; 
     
 
     // Start is called before the first frame update

@@ -242,6 +242,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3545564622510914832, guid: 11b5bd3e840899d4fbde9a508db870d6, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3545564622510914835, guid: 11b5bd3e840899d4fbde9a508db870d6, type: 3}
       propertyPath: m_SortingLayer
       value: 0
@@ -294,6 +298,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8086341511417465905, guid: 11b5bd3e840899d4fbde9a508db870d6, type: 3}
+      propertyPath: fireball
+      value: 
+      objectReference: {fileID: 2462051363964568984, guid: 28156a03bf66d914798a912ecfcb5630, type: 3}
+    - target: {fileID: 8086341511417465905, guid: 11b5bd3e840899d4fbde9a508db870d6, type: 3}
+      propertyPath: mushroom
+      value: 
+      objectReference: {fileID: 1669436516278840022, guid: ae78e475d0a494b4189226cb64302b65, type: 3}
     - target: {fileID: 8086341511417465905, guid: 11b5bd3e840899d4fbde9a508db870d6, type: 3}
       propertyPath: fuckingGame
       value: 

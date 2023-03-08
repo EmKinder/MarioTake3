@@ -9,6 +9,7 @@ public class Score : MonoBehaviour
     int coins;
     Text scoreText;
     Text coinsText;
+    LoadScene loadScene;
     
 
     // Start is called before the first frame update
@@ -16,6 +17,8 @@ public class Score : MonoBehaviour
     {
         score = 0;
         coins = 0;
+
+        loadScene = FindObjectOfType<LoadScene>();
         
     }
 
@@ -41,6 +44,15 @@ public class Score : MonoBehaviour
         {
             coinsText.text = coins.ToString();
         }
+
+        if (loadScene.GetSceneIndex() == 1)
+        {
+            score = 0;
+            coins = 0;
+            
+        }
+
+
     }
 
     public void SetScore(int newScore)
@@ -61,5 +73,19 @@ public class Score : MonoBehaviour
     public int GetCoins()
     {
         return coins;
+    }
+    
+    public void ResetScore()
+    {
+        score = 0;
+        coins = 0;
+        if(scoreText != null)
+        {
+            scoreText.text = "0";
+        }
+        if(coinsText != null)
+        {
+            scoreText.text = "0";
+        }
     }
 }

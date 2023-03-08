@@ -10,6 +10,10 @@ TagManager:
   - MysteryBlocks
   - PipeEntrance
   - Rat
+  - Enemy
+  - FireballBlock
+  - MushroomBlock
+  - OutOfBounds
   layers:
   - Default
   - TransparentFX

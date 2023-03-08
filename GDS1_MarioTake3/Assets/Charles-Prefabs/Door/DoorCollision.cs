@@ -6,10 +6,11 @@ public class DoorCollision : MonoBehaviour
 {
 
     public GameObject doorOpen;
+    LoadScene loadScene;
     // Start is called before the first frame update
     void Start()
     {
-        
+        loadScene = FindObjectOfType<LoadScene>();
     }
 
     // Update is called once per frame
@@ -18,6 +19,7 @@ public class DoorCollision : MonoBehaviour
         if (collision.gameObject.tag == "Rat")
         {
             doorOpen.SetActive(true);
+            loadScene.LoadMainMenu();
         }
     }
 }
