@@ -7,6 +7,7 @@ public class FireballPickup : MonoBehaviour
     // Start is called before the first frame update
     MarioAbilityState abilityState;
     Score score;
+    
 
     // Start is called before the first frame update
     void Start()

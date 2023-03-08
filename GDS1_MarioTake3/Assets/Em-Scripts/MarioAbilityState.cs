@@ -12,21 +12,12 @@ public class MarioAbilityState : MonoBehaviour
     void Start()
     {
         CurrentMarioState = "Regular";
-        shootFireball.enabled = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if(CurrentMarioState == "Fireball")
-        {
-            shootFireball.enabled = true;
-        }
-        else
-        {
-            shootFireball.enabled = false;
-        }
         
     }
 

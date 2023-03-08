@@ -37,13 +37,6 @@ public class LoadScene : MonoBehaviour
                     timerActive = false;
                     timer = 0;
                 }
-                if (SceneManager.GetActiveScene().buildIndex == 3)
-                {
-                    sceneIndex = 1;
-                    SceneManager.LoadScene(1);
-                    timerActive = false;
-                    timer = 0;
-                }
             }
         }
     }
@@ -72,7 +65,6 @@ public class LoadScene : MonoBehaviour
     {
         SceneManager.LoadScene(3);
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        timerActive = true;
     }
 
     public bool TestTimerLength(float thisTimer)
