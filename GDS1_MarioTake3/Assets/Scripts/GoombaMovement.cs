@@ -5,11 +5,12 @@ using UnityEngine;
 public class GoombaMovement : MonoBehaviour
 {
     public Rigidbody2D enemy;
-    public Renderer rend;
+    public SpriteRenderer rend;
     public float enemySpeed;
    public Animator animationControl;
     public GameObject objection;
     public bool forward;
+    public PolygonCollider2D col;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,19 +38,34 @@ public class GoombaMovement : MonoBehaviour
 
    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "pip1")
+        if (rend.isVisible)
         {
-            animationControl.SetTrigger("GoombaRight");
-            enemy.transform.Rotate(0f, 180f, 0);
-           
+            if (collision.gameObject.tag == "pip1")
+            {
+                animationControl.SetTrigger("GoombaRight");
+                enemy.transform.Rotate(0f, 180f, 0);
 
-        }
-        if(collision.gameObject.tag == "pip-reg2")
-        {
-            animationControl.SetTrigger("GoombaLeft");
-            enemy.transform.Rotate(0f, 180f, 0);
+
+
+
+            }
+            if (collision.gameObject.tag == "pip-reg2")
+            {
+                animationControl.SetTrigger("GoombaLeft");
+                enemy.transform.Rotate(0f, 180f, 0);
+            }
+            if (collision.gameObject.tag == "Player")
+            {
+                animationControl.SetTrigger("GoombaDeath");
+                animationControl.SetTrigger("GoombaGone");
+                rend.enabled = !rend.enabled;
+                col.enabled = !col.enabled;
+                // enemy.transform.Rotate(0f, 180f, 0);
+
+            }
         }
        
+
     }
     
   
