@@ -12,25 +12,28 @@ public class FireballPickup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        abilityState = FindObjectOfType<MarioAbilityState>();
+        score = FindObjectOfType<Score>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
+    private void OnTriggerEnter2D(Collider2D other)
+    {        
         if (other.tag == "Player")
         {
+
             if (abilityState.GetMarioState() == "Regular" || abilityState.GetMarioState() == "Mushroom")
             {
                 abilityState.SetMarioState("Fireball");
-               
+
             }
-            score.SetScore(1000);
+          //  score.SetScore(1000);
+            Destroy(this.gameObject);
         }
     }
 }

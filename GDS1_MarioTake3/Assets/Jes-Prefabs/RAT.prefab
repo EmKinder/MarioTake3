@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 2119777687}
   - component: {fileID: 2119777683}
   - component: {fileID: 2119777688}
+  - component: {fileID: 924300274}
+  - component: {fileID: 924300275}
   m_Layer: 0
   m_Name: RAT
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +127,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2119777683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762a1b133221c40419521b00a2a66757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveSpeed: 10
+  rigidbody2D: {fileID: 2119777687}
 --- !u!60 &2119777688
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -194,3 +197,35 @@ PolygonCollider2D:
       - {x: -0.114999995, y: -0.38}
       - {x: 0.405, y: -0.38}
       - {x: 0.435, y: -0.37}
+--- !u!114 &924300274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122906511725973926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21219746fe848c41aaec5380de8ee65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 5762151112242134396, guid: 039de6f9f9656ef49a94e6fd499895ca, type: 3}
+  velocity: {x: 5, y: -5}
+  offset: {x: 0.7, y: 0.1}
+  cooldown: 1
+  abilityState: {fileID: 924300275}
+--- !u!114 &924300275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122906511725973926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065e4f2becc496b4f8e0842fa4533511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentMarioState: 
+  shootFireball: {fileID: 0}
+  lives: {fileID: 0}

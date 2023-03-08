@@ -33,7 +33,7 @@ public class Fireball : MonoBehaviour
             Destroy(collision.gameObject);
             Explode();
         }
-        if(collision.contacts[0].normal.x != 0)
+        if(collision.contacts[0].normal.x != 0 && collision.collider.tag != "Player" && collision.collider.tag != "Fireball")
         {
             Explode();
         }
