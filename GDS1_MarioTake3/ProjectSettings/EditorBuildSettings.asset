@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: bcec4ccdf8fea9e4c9c3b20fcb4d42a2
   - enabled: 1
-    path: Assets/Scenes/CharlesCollsions.unity
-    guid: d398d150726eb6245811697d3769011d
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 98661225d6360b84fbd3d62a3c968561
+  - enabled: 1
+    path: Assets/Scenes/CharlesCollsions.unity
+    guid: d398d150726eb6245811697d3769011d
   - enabled: 1
     path: Assets/Scenes/LivesScene.unity
     guid: 2f1fb51967aae1d4e944525c23f1b572

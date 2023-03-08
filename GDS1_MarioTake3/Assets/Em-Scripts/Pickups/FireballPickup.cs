@@ -7,6 +7,7 @@ public class FireballPickup : MonoBehaviour
     // Start is called before the first frame update
     MarioAbilityState abilityState;
     Score score;
+    public Animator anim;
     
 
     // Start is called before the first frame update
@@ -31,6 +32,7 @@ public class FireballPickup : MonoBehaviour
             {
                 abilityState.SetMarioState("Fireball");
                 abilityState.Fireball();
+             //   anim.Play("RatPowerUpGrown");
 
             }
             score.SetScore(1000);

@@ -7,6 +7,7 @@ public class MushroomPickup : MonoBehaviour
 
     MarioAbilityState abilityState;
     Score score;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class MushroomPickup : MonoBehaviour
             {
                 abilityState.SetMarioState("Mushroom");
                 abilityState.Mushroom();
+               // anim.Play("RatPowerUp");
 
             }
             score.SetScore(1000);

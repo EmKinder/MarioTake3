@@ -13,8 +13,9 @@ public class Lives : MonoBehaviour
     public bool playerDeath; //TEST
     Text livesText;
     Text scoreText;
-    Score score; 
-    
+    Score score;
+
+
 
     // Start is called before the first frame update
 
@@ -51,7 +52,7 @@ public class Lives : MonoBehaviour
             //TEST
         }
 
-        if(loadScene.GetSceneIndex() == 1)
+        if(loadScene.GetSceneIndex() == 0)
         {
             lives = 3;
         }

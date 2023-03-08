@@ -13,6 +13,9 @@ public class LoadScene : MonoBehaviour
     public bool gameReset;
     public Lives lives;
     public Score score;
+    public AudioSource audio;
+    public AudioClip gameOver;
+
 
 
     // Start is called before the first frame update
@@ -36,8 +39,8 @@ public class LoadScene : MonoBehaviour
             {
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                 {
-                    sceneIndex = 0;
-                    SceneManager.LoadScene(0);
+                    sceneIndex = 1;
+                    SceneManager.LoadScene(1);
                     timerActive = false;
                     timer = 0;
                 }
@@ -60,13 +63,14 @@ public class LoadScene : MonoBehaviour
             lives.ResetLives();
             
         }
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene(1);
+        GameRestart();
+        SceneManager.LoadScene(0);
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
@@ -74,6 +78,9 @@ public class LoadScene : MonoBehaviour
     {
         SceneManager.LoadScene(3);
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        audio.clip = gameOver;
+        audio.Play();
+
     }
 
     public bool TestTimerLength(float thisTimer)

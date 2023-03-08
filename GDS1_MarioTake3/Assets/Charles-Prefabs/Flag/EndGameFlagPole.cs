@@ -8,11 +8,14 @@ public class EndGameFlagPole : MonoBehaviour
     public Animator flagAnim;
     public GameObject door;
     public GameObject flag;
+    public AudioSource audio;
+    public AudioClip levelComplete;
     Score score;
     // Start is called before the first frame update
     void Start()
     {
         score = FindObjectOfType<Score>();
+        audio = FindObjectOfType<AudioSource>();
     }
 
     // Update is called once per frame
@@ -35,7 +38,9 @@ public class EndGameFlagPole : MonoBehaviour
    IEnumerator FlagMovement()
     {
         flagAnim.SetTrigger("flagDown");
-        yield return new WaitForSeconds(1.867f);
+        audio.clip = levelComplete;
+        audio.Play();
+        yield return new WaitForSeconds(3f);
         door.SetActive(true);
         flag.SetActive(true);
     }

@@ -30,7 +30,7 @@ public class ShootFireball : MonoBehaviour
             scriptEnabled = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canShoot && scriptEnabled)
+        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Space)) && canShoot && scriptEnabled)
         {
             GameObject go = (GameObject) Instantiate(projectile, (Vector2)transform.position + offset * transform.localScale.x, Quaternion.identity);
             go.GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x * transform.localScale.x, velocity.y);

@@ -181,6 +181,8 @@ MonoBehaviour:
   flagAnim: {fileID: 2536653694901190792}
   door: {fileID: 0}
   flag: {fileID: 1178289858654816285}
+  audio: {fileID: 0}
+  levelComplete: {fileID: 8300000, guid: 30a368824d500fe4b8a637ad7633f233, type: 3}
 --- !u!61 &234098241
 BoxCollider2D:
   m_ObjectHideFlags: 0

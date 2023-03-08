@@ -45,7 +45,7 @@ public class Score : MonoBehaviour
             coinsText.text = coins.ToString();
         }
 
-        if (loadScene.GetSceneIndex() == 1)
+        if (loadScene.GetSceneIndex() == 0)
         {
             score = 0;
             coins = 0;
