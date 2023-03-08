@@ -10,6 +10,8 @@ public class LoadScene : MonoBehaviour
     public float timer;
     public bool timerActive;
     public int sceneIndex;
+    public bool gameReset;
+    public Lives lives;
 
 
     // Start is called before the first frame update
@@ -51,6 +53,10 @@ public class LoadScene : MonoBehaviour
     
     public void LoadMainGame()
     {
+        if(gameReset == true)
+        {
+            lives.ResetLives();
+        }
         SceneManager.LoadScene(0);
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
@@ -75,5 +81,16 @@ public class LoadScene : MonoBehaviour
     public int GetSceneIndex()
     {
         return sceneIndex;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void GameRestart()
+    {
+        lives.ResetLives();
+        LoadLivesScene();
     }
 }

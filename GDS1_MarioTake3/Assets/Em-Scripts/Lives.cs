@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //THIS SCRIPT MUST REMAIN ENTACT IN ALL SCENES AFTER MENU SCREEN 
 
@@ -10,6 +11,8 @@ public class Lives : MonoBehaviour
     public int lives;
     public LoadScene loadScene;
     public bool playerDeath; //TEST
+    Text livesText;
+    Text scoreText; 
     
 
     // Start is called before the first frame update
@@ -31,6 +34,15 @@ public class Lives : MonoBehaviour
 
     private void Update()
     {
+        if (GameObject.Find("Canvas/LivesText") != null)
+        {
+            livesText = GameObject.Find("Canvas/LivesText").GetComponent<Text>();
+        }
+
+        if(livesText != null) { 
+            livesText.text = lives.ToString();
+         }
+
         if (playerDeath)
         {
             PlayerDeath();
@@ -67,6 +79,15 @@ public class Lives : MonoBehaviour
         {
             //Any animation that needs to happen
             loadScene.LoadLivesScene();
+        }
+    }
+
+    public void ResetLives()
+    {
+        lives = 3;
+        if (livesText != null)
+        {
+            livesText.text = "3";
         }
     }
 }
