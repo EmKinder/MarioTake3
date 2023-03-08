@@ -8,7 +8,8 @@ TagManager:
   - Floor
   - Blocks
   - MysteryBlocks
-  - Pipe-Underground
+  - PipeEntrance
+  - Rat
   layers:
   - Default
   - TransparentFX
@@ -45,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: GreenBlock
+    uniqueID: 1395492549
     locked: 0
