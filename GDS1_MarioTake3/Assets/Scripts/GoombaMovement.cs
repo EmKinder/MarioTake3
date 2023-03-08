@@ -49,11 +49,7 @@ public class GoombaMovement : MonoBehaviour
 
 
             }
-            if (collision.gameObject.tag == "Pipe-Regular")
-            {
-                animationControl.SetTrigger("GoombaLeft");
-                enemy.transform.Rotate(0f, 180f, 0);
-            }
+           
             if (collision.gameObject.tag == "Player")
             {
                 animationControl.SetTrigger("GoombaDeath");

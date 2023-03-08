@@ -49,11 +49,6 @@ public class RedMushroomJes : MonoBehaviour
 
 
             }
-            if (collision.gameObject.tag == "Pipe-Regular")
-            {
-              
-                enemy.transform.Rotate(0f, 180f, 0);
-            }
             if (collision.gameObject.tag == "Player")
             {
                
